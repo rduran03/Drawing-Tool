@@ -32,7 +32,7 @@ brush_size = 2
 min_brush_size = 1
 max_brush_size = 20
 
-fill_mode = "outline" # "outline" or "fill" for shapes
+fill_mode = "outline" 
 
 # Toolbar height definition
 BUTTON_WIDTH = 70
@@ -99,7 +99,7 @@ class Button:
 
 # Create Buttons 
 
-# Row 1: Color buttons
+#Row 1
 color_buttons = []
 colors = [BLACK, WHITE, RED, GREEN, BLUE, YELLOW, PURPLE, ORANGE, CYAN]
 start_x_colors = BUTTON_MARGIN
@@ -110,7 +110,7 @@ for i, color in enumerate(colors):
                  "", color, action="set_color")
     color_buttons.append(btn)
 
-# Row 2: Tool buttons
+#Row 2: Tool buttons
 tool_buttons = []
 tool_names = ["Pen", "Line", "Rect", "Circle", "Eraser", "Fill"]
 modes = ["pen", "line", "rect", "circle", "eraser", "fill"]
@@ -122,7 +122,7 @@ for i, (name, mode) in enumerate(zip(tool_names, modes)):
                  name, LIGHT_GRAY, BLACK, action="set_mode", mode=mode)
     tool_buttons.append(btn)
 
-# Row 3: Utility buttons (Size, Fill, Undo, Redo, Save, Clear)
+#Row 3: Utility buttons (Size, Fill, Undo, Redo, Save, Clear)
 utility_buttons = []
 # Size Down
 utility_buttons.append(Button(BUTTON_MARGIN,
@@ -428,6 +428,7 @@ while running:
 
 pygame.quit()
 sys.exit()
+
 
 
 
