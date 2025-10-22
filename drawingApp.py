@@ -23,7 +23,7 @@ LIGHT_GRAY = (200, 200, 200)
 TOOLBAR_BACKGROUND = (60, 60, 60) 
 
 drawing_color = BLACK
-drawing_mode = "pen"  # "pen", "line", "rect", "circle", "eraser", "fill"
+drawing_mode = "pen"  # "pen", "line", 
 drawing = False
 start_pos = None  
 current_pos = None 
@@ -428,6 +428,7 @@ while running:
 
 pygame.quit()
 sys.exit()
+
 
 
 
