@@ -23,12 +23,12 @@ LIGHT_GRAY = (200, 200, 200)
 TOOLBAR_BACKGROUND = (60, 60, 60) 
 
 drawing_color = BLACK
-drawing_mode = "pen"  # "pen", "line", 
+drawing_mode = "pen" 
 drawing = False
 start_pos = None  
 current_pos = None 
 
-brush_size = 2 # Initial brush thickness
+brush_size = 2 
 min_brush_size = 1
 max_brush_size = 20
 
@@ -428,6 +428,7 @@ while running:
 
 pygame.quit()
 sys.exit()
+
 
 
 
